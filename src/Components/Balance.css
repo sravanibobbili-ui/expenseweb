@@ -1,0 +1,30 @@
+.divname {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: flex-start; /* Align items at the top */
+  align-items: center; /* Center items horizontally */
+  width: 140px;
+  height: 62px;
+  background-color: lightgray;
+  border: 1px solid gray;
+  margin-right: 100px; /* Add a gap of 20px between boxes */
+  background-color: rgb(238, 232, 243);
+  font-weight: bold;
+  border-radius: 10px; /* Set border-radius to create curved edges */
+  /* Add hover effects */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition for background color */
+}
+.main-conte {
+  display: flex; /* Use flexbox to display items horizontally */
+  flex-direction: row; /* Arrange items in a row */
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 90px;
+  right: 0;
+}
+.divname:hover {
+  background-color: rgb(219, 191, 242); /* Change background color */
+  transform: scale(1.05); /* Slightly enlarge the element on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}

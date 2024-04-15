@@ -1,0 +1,147 @@
+.grid-table {
+  border-collapse: separate;
+  border-spacing: 10px; /* Adjust the spacing between grid items */
+}
+
+.grid-cell {
+  border: 1px solid #ddd; /* Border style */
+  padding: 10px; /* Adjust the padding */
+  width: 200px; /* Adjust the width of each cell */
+}
+
+/* Optional: Style for header cells */
+.grid-header-cell {
+  font-weight: bold;
+  background-color: #f2f2f2; /* Light gray background */
+}
+
+/* View.css */
+
+.expense-table {
+  margin: 0 auto; /* Center the table horizontally */
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 8px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.expense-table th {
+  background-color: #f2f2f2;
+}
+
+.expense-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.expense-table tr:hover {
+  background-color: #ddd;
+}
+
+.expense-table th,
+.expense-table td {
+  border-bottom: 1px solid #ddd;
+}
+
+.buttonclass {
+  /* Add your button styles here */
+  background-color: #007bff; /* Blue */
+  border: none;
+  color: #ec2a2a;
+  /* padding: 8px 16px; */
+  text-align: center;
+  /* text-decoration: none; */
+  /* display: inline-block; */
+  /* font-size: 14px; */
+  /* border-radius: 4px; */
+  cursor: pointer;
+  /* margin: 5px; */
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  /* top: 10px; */
+  right: 50px;
+}
+.button {
+  /* Add your button styles here */
+  background-color: #007bff; /* Blue */
+  border: none;
+  color: #ec2a2a;
+  /* padding: 8px 16px; */
+  text-align: center;
+  /* text-decoration: none; */
+  /* display: inline-block; */
+  font-size: 14px;
+  /* border-radius: 4px; */
+  cursor: pointer;
+  margin: 5px;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  /* top: 10px; */
+  right: 100px;
+}
+.buttonclass:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagination-container {
+  margin-top: 20px; /* Adjust the spacing between the table and pagination */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-container {
+  margin-bottom: 20px; /* Adjust the spacing between the table and pagination */
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pagination-item {
+  margin-right: 5px; /* Adjust the spacing between pagination items */
+}
+.expense-table td {
+  padding: 8px; /* Adjust padding as needed */
+  text-align: center;
+  border: 1px solid #ddd; /* Add border */
+  border-radius: 10px;
+}
+/* Styling for the table headers */
+.expense-table th {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd; /* Add border */
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+/* Styling for table cells */
+.expense-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd; /* Add border */
+  border-radius: 10px;
+}
+
+/* Alternate row background color */
+.expense-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect */
+.expense-table tr:hover {
+  background-color: #ddd;
+}

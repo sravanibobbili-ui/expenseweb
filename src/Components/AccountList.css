@@ -1,0 +1,49 @@
+/* Styling for the overall bank account list container */
+.bank-account-list {
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styling for the table */
+.bank-account-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Styling for table headers */
+.bank-account-list table th {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+}
+
+/* Styling for table cells */
+.bank-account-list table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Styling for the header */
+.bank-account-list h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Adjustment for empty list message */
+.bank-account-list p:last-child {
+  margin-bottom: 0;
+}
+
+/* Styling for the button */
+.bank-account-list button {
+  font-size: 0.8rem;
+  width: 150px;
+  position: absolute; /* Set position to absolute */
+  top: 20px; /* Adjust top position as needed */
+  right: 100px; /* Adjust right position as needed */
+}

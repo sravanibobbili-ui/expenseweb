@@ -1,0 +1,12 @@
+.dashboard-container {
+  width: 100%; /* Ensures the dashboard takes the full width */
+  height: 100%; /* Ensures the dashboard takes the full height */
+}
+
+.content {
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Add additional styling for Navmenu, Header, and DonutChart components as needed */

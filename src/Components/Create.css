@@ -1,0 +1,64 @@
+.bodyclass {
+  /* font-family: Arial, sans-serif; */
+  background-color: #f2f2f2;
+
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.formmain1 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 400px; /* Set a fixed width for the form */
+  background-image: linear-gradient(
+    to right,
+    rgb(216, 145, 223),
+    rgb(159, 183, 91)
+  );
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  width: calc(100% - 22px); /* Adjusted width to accommodate for border */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.LoginLink {
+  display: block;
+  color: #666;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.Submit {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.Submit:hover {
+  background-color: #45a049;
+}

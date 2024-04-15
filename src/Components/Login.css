@@ -1,0 +1,73 @@
+.bodylogin {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.formmain {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 250px;
+  background-image: linear-gradient(
+    to right,
+    rgb(216, 145, 223),
+    rgb(159, 183, 91)
+  );
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+button,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.ForgotPass,
+.CreateAcc {
+  display: block;
+  color: #455178;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.Submit {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.Submit:hover {
+  background-color: #45a049;
+}
+
+.date-picker-container {
+  position: relative;
+}
+
+.react-datepicker {
+  position: absolute;
+  left: 0;
+  top: 100%;
+}

@@ -1,0 +1,96 @@
+.bodylogin {
+  font-family: Arial, sans-serif; /* Match font family */
+  background-color: #f8f9fa; /* Match background color */
+  padding: 20px; /* Add padding */
+}
+
+.formmain {
+  max-width: 400px; /* Set maximum width */
+  margin: 0 auto; /* Center align the form */
+  background-color: #fff; /* Form background color */
+  padding: 20px; /* Add padding */
+  border-radius: 8px; /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.formmain label {
+  font-weight: bold; /* Make labels bold */
+}
+
+.formmain input[type="text"],
+.formmain select {
+  width: 100%; /* Set input width to fill container */
+  padding: 8px; /* Add padding */
+  margin-bottom: 10px; /* Add margin bottom */
+  border: 1px solid #ced4da; /* Add border */
+  border-radius: 4px; /* Add border radius */
+}
+
+.formmain input[type="text"]:focus,
+.formmain select:focus {
+  outline: none; /* Remove outline on focus */
+  border-color: #80bdff; /* Change border color on focus */
+}
+
+.Submit {
+  width: 50%; /* Set button width to fill container */
+  padding: 10px; /* Add padding */
+  margin-top: 15px; /* Add margin top */
+}
+
+/* CSS for Form.Control input */
+/* CSS for Form.Control input */
+.enteramo {
+  width: calc(100% - 20px); /* Subtract padding from width */
+  height: 40px; /* Set height */
+  padding: 8px; /* Add padding */
+  margin-bottom: 10px; /* Add margin bottom */
+  border: 1px solid #ced4da; /* Add border */
+  border-radius: 4px; /* Add border radius */
+}
+
+/* CSS for DatePicker */
+.react-datepicker-wrapper {
+  width: calc(105% - 20px); /* Subtract padding from width */
+  height: 40px; /* Set height */
+  padding: 8px; /* Add padding */
+  margin-bottom: 10px; /* Add margin bottom */
+  border: 1px solid #ced4da; /* Add border */
+  border-radius: 4px; /* Add border radius */
+}
+
+/* CSS for DatePicker input */
+.react-datepicker__input-container input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS for DatePicker input container */
+.react-datepicker__input-container {
+  position: relative; /* Ensure relative positioning */
+}
+
+/* CSS for DatePicker input */
+.react-datepicker-wrapper input {
+  width: calc(100% - 20px); /* Subtract width of calendar symbol */
+  height: 40px; /* Set height */
+  padding: 8px; /* Add padding */
+  margin-bottom: 10px; /* Add margin bottom */
+  border: 1px solid #ced4da; /* Add border */
+  border-radius: 4px; /* Add border radius */
+  box-sizing: border-box;
+}
+
+/* CSS for calendar symbol */
+.react-datepicker-wrapper .react-datepicker__input-container::after {
+  content: url("calc.png"); /* Path to your calendar icon */
+  position: absolute; /* Set absolute positioning */
+  top: 50%; /* Align vertically */
+  right: 10px; /* Align to the right */
+  transform: translateY(-50%); /* Adjust vertical alignment */
+  width: 24px; /* Set width */
+  height: 24px; /* Set height */
+}

@@ -1,0 +1,78 @@
+/* Profile.css */
+.bodyProfile {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formgroup {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 250px;
+  background-image: linear-gradient(
+    to right,
+    rgb(216, 145, 223),
+    rgb(159, 183, 91)
+  );
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px; /* Add some spacing between input fields */
+}
+
+.input-group input {
+  width: 100%; /* Adjusted width */
+}
+
+.input-group .eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.input-group .edit-icon {
+  position: absolute;
+  right: 80px;
+  top: 100%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
