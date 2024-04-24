@@ -43,7 +43,7 @@ const Addexp = () => {
       // window.location.reload();
       // Fetch exp_cat_id from expensecategory database based on the selected option
       const { data } = await axios.get(
-        `http://localhost:8080/exp/expcat/${formData.enttype}`
+        `http://18.219.90.191:8081/exp/expcat/${formData.enttype}`
       );
 
       // Check if data exists and has items
@@ -60,13 +60,16 @@ const Addexp = () => {
           exp_cat_id: exp_cat_id.toString(), // Include exp_cat_id in formData
         };
         // console.log(user_id);
-        const response = await fetch("http://localhost:8080/expense/expenses", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(updatedFormData),
-        });
+        const response = await fetch(
+          "http://18.219.90.191:8081/expense/expenses",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(updatedFormData),
+          }
+        );
 
         if (!response.ok) {
           throw new Error("Failed to submit form");

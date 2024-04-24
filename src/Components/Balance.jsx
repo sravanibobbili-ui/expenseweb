@@ -12,7 +12,7 @@ const Balance = ({ user }) => {
       try {
         // const date = "jan2"; // Replace with the actual date
         const response = await axios.get(
-          `http://localhost:8080/expense/totalexp/${user}`
+          `http://18.219.90.191:8081/expense/totalexp/${user}`
         );
         setExpenses(response.data);
       } catch (error) {
@@ -24,7 +24,7 @@ const Balance = ({ user }) => {
     const fetchAccountDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/expense/account/${user}`
+          `http://18.219.90.191:8081/expense/account/${user}`
         );
 
         setAccountDetails(response.data);

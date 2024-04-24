@@ -19,7 +19,7 @@ function AccountList() {
 
         // Fetch bank accounts for the user
         const response = await axios.get(
-          `http://localhost:8080/get/account/${userData.user_id}`
+          `http://18.219.90.191:8081/get/account/${userData.user_id}`
         );
         setBankAccounts(response.data);
       } catch (error) {

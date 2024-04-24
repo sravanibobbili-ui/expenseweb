@@ -21,7 +21,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        `http://localhost:8080/api/user/${formData.email}`,
+        `http://18.219.90.191:8081/api/user/${formData.email}`,
         {
           method: "GET",
           headers: {

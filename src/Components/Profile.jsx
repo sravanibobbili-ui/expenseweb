@@ -28,7 +28,7 @@ const Profile = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/api/userid/${userData.user_id}`
+          `http://18.219.90.191:8081/api/userid/${userData.user_id}`
         );
         setFormData(response.data);
       } catch (error) {}

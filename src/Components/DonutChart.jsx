@@ -13,7 +13,7 @@ const DonutChart = ({ userId }) => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:8080/expense/exp/${userId}`
+          `http://18.219.90.191:8081/expense/exp/${userId}`
         );
         const data = await response.json();
         setExpensesData(data);
