@@ -19,7 +19,7 @@ const Create = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8080/api/userdetails", {
+      const response = await fetch("http://52.14.152.84:8081/api/userdetails", {
         method: "POST", // Changed to uppercase
         headers: {
           "Content-Type": "application/json",
