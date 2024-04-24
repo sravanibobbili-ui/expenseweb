@@ -19,13 +19,16 @@ const Create = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://52.14.152.84:8081/api/userdetails", {
-        method: "POST", // Changed to uppercase
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "http://18.219.90.191:8081/api/userdetails",
+        {
+          method: "POST", // Changed to uppercase
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to submit form");
