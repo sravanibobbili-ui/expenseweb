@@ -39,7 +39,7 @@ function AddAccount() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://18.219.90.191:8081/get/addaccount",
+        "http://3.144.85.162:8081/get/addaccount",
         formData
       );
 

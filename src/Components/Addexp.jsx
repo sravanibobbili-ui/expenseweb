@@ -61,7 +61,7 @@ const Addexp = () => {
         };
         // console.log(user_id);
         const response = await fetch(
-          "http://18.219.90.191:8081/expense/expenses",
+          "http://3.144.85.162:8081/expense/expenses",
           {
             method: "POST",
             headers: {

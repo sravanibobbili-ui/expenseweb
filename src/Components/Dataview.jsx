@@ -22,10 +22,8 @@ const Dataview = () => {
     const fetchData = async () => {
       try {
         const [expenseResponse, categoryResponse] = await Promise.all([
-          axios.get(
-            `http://18.219.90.191:8081/expense/exp/${userData.user_id}`
-          ),
-          axios.get("http://18.219.90.191:8081/exp"), // Assuming this endpoint provides the category mapping data
+          axios.get(`http://3.144.85.162:8081/expense/exp/${userData.user_id}`),
+          axios.get("http://3.144.85.162:8081/exp"), // Assuming this endpoint provides the category mapping data
         ]);
         setExpenses(expenseResponse.data);
         setCategories(categoryResponse.data);
