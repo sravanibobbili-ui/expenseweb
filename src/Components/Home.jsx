@@ -1,3 +1,4 @@
+// Home.js
 import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
@@ -12,28 +13,16 @@ const Home = () => {
         style={{ paddingTop: "0px", paddingBottom: "0px" }}
       >
         <Container>
-          <h1>Expense Tracker</h1>
-
-          <Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav id="basic-navbar-nav navbar navbar-dark bg-primary">
-                <Nav.Link>Expense Tracker</Nav.Link>
-                <Nav.Link
-                  href="/Login"
-                  style={{ color: "black", fontSize: "16px", padding: "1.5em" }}
-                >
-                  Login
-                </Nav.Link>
-                <Nav.Link
-                  href="/Create"
-                  style={{ color: "black", fontSize: "16px", padding: "1.5em" }}
-                >
-                  Create
-                </Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar.Brand>
+          <Navbar.Brand>Expense Tracker</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto">
+              {/* Use NavLink instead of Nav.Link for better routing */}
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/Login">Login</Nav.Link>
+              <Nav.Link href="/Create">Create</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </header>

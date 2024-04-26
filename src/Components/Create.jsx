@@ -14,12 +14,12 @@ const Create = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value }); // Changed e.target.id to e.target.name
   };
-
+  const baseURL = "http://3.139.63.207:8080";
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://3.139.63.207:8080/api/userdetails", {
+      const response = await fetch("${baseURL}/api/userdetails", {
         method: "POST", // Changed to uppercase
         headers: {
           "Content-Type": "application/json",

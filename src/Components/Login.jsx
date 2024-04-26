@@ -16,19 +16,16 @@ const Login = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     setError(""); // Clear any previous errors when input changes
   };
-
+  const baseURL = "http://3.139.63.207:8080";
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(
-        `http://3.139.63.207:8080//api/user/${formData.email}`,
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const response = await fetch(`${baseURL}//api/user/${formData.email}`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
       if (!response.ok) {
         const errorMessage = await response.text();
