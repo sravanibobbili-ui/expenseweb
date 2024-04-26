@@ -19,16 +19,13 @@ const Create = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(
-        "http://ec2-3-144-85-162.us-east-2.compute.amazonaws.com:8081/api/userdetails",
-        {
-          method: "POST", // Changed to uppercase
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch("http://3.139.63.207:8080/api/userdetails", {
+        method: "POST", // Changed to uppercase
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (!response.ok) {
         throw new Error("Failed to submit form");

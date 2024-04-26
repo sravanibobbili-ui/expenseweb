@@ -28,7 +28,7 @@ const Profile = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://3.144.85.162:8081/api/userid/${userData.user_id}`
+          `http://3.139.63.207:8080/api/userid/${userData.user_id}`
         );
         setFormData(response.data);
       } catch (error) {}
@@ -58,7 +58,7 @@ const Profile = () => {
     // Send updated profile data to the backend
     try {
       const response = await axios.put(
-        `http://localhost:8080/api/userid/${formData.user_id}`,
+        `http://3.139.63.207:8080/api/userid/${formData.user_id}`,
         formData
       );
 

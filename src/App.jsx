@@ -22,7 +22,7 @@ const App = () => {
     <Router>
       {/* <div className="App"> */}
       <Routes>
-        <Route path="/" exact element={<Home />} />
+        <Route path="/" exact element={<Login />} />
         <Route path="/Create" element={<Create />} />
         <Route exact path="/Login" element={<Login />} />
         {/* <Route path="/Create" exact element={<Create />} /> */}

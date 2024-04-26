@@ -43,7 +43,7 @@ const Addexp = () => {
       // window.location.reload();
       // Fetch exp_cat_id from expensecategory database based on the selected option
       const { data } = await axios.get(
-        `http://18.219.90.191:8081/exp/expcat/${formData.enttype}`
+        `http://3.139.63.207:8080/exp/expcat/${formData.enttype}`
       );
 
       // Check if data exists and has items
@@ -61,7 +61,7 @@ const Addexp = () => {
         };
         // console.log(user_id);
         const response = await fetch(
-          "http://3.144.85.162:8081/expense/expenses",
+          "http://3.139.63.207:8080/expense/expenses",
           {
             method: "POST",
             headers: {
